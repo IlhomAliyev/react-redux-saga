@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  background-color: #666;
+  color: white;
+}
+
+.App {
+  font-family: sans-serif;
+  padding: 20px;
+
+  .count {
+    margin: 0 0 10px 0;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 12px;
+    color: black
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    button {
+      flex: 0 1 33%;
+      cursor: pointer;
+      padding: 10px 15px;
+      border: 0;
+      border-radius: 15px;
+      transition: 300ms;
+      
+      &:hover {
+        transform: scale(1.1);
+        background-color: royalblue;
+        color: white;
+      }
+
+      &:active {
+        transform: scale(0.9);
+        transition: 200ms;
+      }
+    }
+  }
+
+  .noUsers {
+    text-align: center;
+    color: tomato;
+    margin: 10px 0 0;
+  }
+}
