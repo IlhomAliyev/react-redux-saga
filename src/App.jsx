@@ -19,13 +19,13 @@ const App = () => {
           className="btn"
           onClick={() => dispatch(asyncIncrementCreator())}
         >
-          Increment +
+          "Async" Increment +
         </button>
         <button
           className="btn"
           onClick={() => dispatch(asyncDecrementCreator())}
         >
-          Decrement -
+          "Async" Decrement -
         </button>
         <button className="btn" onClick={() => dispatch(fetchUsers())}>
           Set users
