@@ -9,12 +9,12 @@ import {
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 function* incrementWorker() {
-  yield delay(1500);
+  yield delay(1000);
   yield put(incrementCreator());
 }
 
 function* decrementWorker() {
-  yield delay(1500);
+  yield delay(1000);
   yield put(decrementCreator());
 }
 

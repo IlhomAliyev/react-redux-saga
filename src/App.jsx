@@ -4,6 +4,7 @@ import {
   asyncIncrementCreator,
   asyncDecrementCreator,
 } from './store/countReducer';
+import { fetchUsers } from './store/userReducer';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -26,7 +27,7 @@ const App = () => {
         >
           Decrement -
         </button>
-        <button className="btn" onClick={() => console.log('Set Users')}>
+        <button className="btn" onClick={() => dispatch(fetchUsers())}>
           Set users
         </button>
       </div>
